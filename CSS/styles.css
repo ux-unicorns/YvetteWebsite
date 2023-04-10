@@ -254,6 +254,10 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2rem;
+   
+  }
+  #back{
+    background-image: url("../images/Rectangle\ 12.png");
   }
   
   footer {
