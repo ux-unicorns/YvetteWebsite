@@ -8,30 +8,34 @@
     <link rel="stylesheet" href="../YvetteWebsite/CSS/styles.css">
     <script defer src="../YvetteWebsite/JS/script.js"></script>
     <title>Solar System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+
 </head>
 <body>
-<header>
-    <h1 class="top-right">Solar System</h1>
-    <nav>
-        <button id="join-btn">Join</button>
-        <button id="menu-btn">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <div class="menu">
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Contacts</a></li>
-                <li><a href="#">Media</a></li>
-            </ul>
-        </div>
-    </nav>
-</header>
+    <header>
+        <h1 class="top-right">Solar System</h1>
+        <nav>
+            <button id="join-btn">Join</button>
+            <input type="checkbox" id="menu-btn-checkbox" style="display: none;" />
+            <label for="menu-btn-checkbox" id="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">Media</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
 <main>
     <section class="hero">
         <div class="green-ellipse">
@@ -39,16 +43,24 @@
         </div>
     </section>
     <section class="social">
-        <p>Follow <span class="arrow-down">&darr;</span></p>
+        <p style="color: green;">Follow</p>
+        <span class="arrow-down">&dtri;</span>
         <!-- Add social media icons here -->
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.telegram.org" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram-plane"></i></a>
+            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+          </div>
+          
     </section>
     <section class="content">
         
-        <div class="right">
+        <div class="right" >
             <!-- Add image here -->
-            <img src="../YvetteWebsite/images/Frame 19.png" alt="Placeholder image">
+            <img src="../YvetteWebsite/images/Frame 19.png" alt="Placeholder image" >
         </div>
-        <div class="left">
+        <div class="left" >
             <h3>Game</h3>
             <p>Your Open Galactic Space in our Galaxy</p>
             <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
@@ -111,12 +123,16 @@
     </section>
     <section class="watch">
         <div class="left">
-            <h3>Watch</h3>
-            <p>Join in your room</p>
-            <p>Watch my Universe</p>
-            <!-- Add baseline-discord here -->
+            
+            
             <h2>Your Open Galactic Space in our Galaxy</h2>
-            <p>Watch my Universe <span class="arrow-right">&rarr;</span></p>
+            <p style="color: green;">Watch my Universe </p>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            <div>
+                <h3>Watch</h3>
+            <p style="color: green;">Join in your room</p>
+            <p style="color: green;">Watch my Universe</p>
+            </div>
         </div>
         <div class="right">
             <!-- Add image here -->
@@ -125,8 +141,10 @@
     </section>
     <section id="back" class="watch">
         <div class="right">
+            <!-- Add baseline-discord here -->
+            <img src="../YvetteWebsite/images/ic_baseline-discord.png" alt="Placeholder baseline-discord">
             <h2>Your Open Galactic Space in our Galaxy</h2>
-            <p>Watch my Universe <span class="arrow-right">&rarr;</span></p>
+            <p style="color: green;">Watch my Universe <span class="arrow-right">&gt;</span></p>
             
             <!-- Add social media icons here -->
         </div>
@@ -142,27 +160,40 @@
   
     <div class="right">
         <h2>Your Open Galactic Space in our Galaxy</h2>
-        <p>Watch my Universe <span class="arrow-right">&rarr;</span></p>
+        <p style="color: green;">Watch my Universe <span class="arrow-right">&gt;</span></p>
        
         <!-- Add social media icons here -->
+        <ul style="list-style: none;">
+           
+            <li><a href="#" style="color: white; text-decoration: none;">Privacy Policy</a></li>
+            <li><a href="#" style="color: white; text-decoration: none;">Contacts</a></li>
+          
+        </ul>
     </div>
 
-    <div class="left">
+    <div class="left" >
         <p>MENU</p>
-        <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Contacts</a></li>
-            <li><a href="#">Media</a></li>
+        <ul style="list-style: none;">
+            <li><a href="#" style="color: white; text-decoration: none;">About</a></li>
+            <li><a href="#" style="color: white; text-decoration: none;">Blog</a></li>
+            <li><a href="#" style="color: white; text-decoration: none;">Home</a></li>
+            
+            <li><a href="#" style="color: white; text-decoration: none;">Menu</a></li>
+           
+            <li><a href="#" style="color: white; text-decoration: none;">Media</a></li>
         </ul>
     </div>
     
 </footer>
 <div style="text-align: center;">
-    <p>Follow</p>
+    <p style="color: green;">Follow</p>
+    <!-- Add social media icons here -->
+    <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.telegram.org" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram-plane"></i></a>
+        <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+      </div>
 </div>
     
 

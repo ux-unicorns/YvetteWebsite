@@ -8,8 +8,19 @@ body {
     background-attachment: fixed;
     background-position: center;
     color: #fff;
+    margin-right: 60px;
+    margin-left: 60px;
    
   }
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 36, 3, 0.8);
+    z-index: 1000;
+  }
+  
   
   h1 {
     color: #fff;
@@ -32,12 +43,7 @@ body {
   color: #0b8628;
   }
   
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-  }
+
   
   /* Menu Button */
   #menu-btn {
@@ -46,6 +52,7 @@ body {
     position: relative;
     width: 25px;
     height: 20px;
+    
   }
   
   #menu-btn span {
@@ -102,16 +109,22 @@ body {
     gap: 0.5rem;
   }
   
-  #join-btn
-  {
-   background-color: #0b8628;
-   color:#15f149;
-    left: 10px;
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem;
+    gap: 10px;
+  }
+  
+  #join-btn {
+    background-color: #0b8628;
+    color: #15f149;
     cursor: pointer;
     border: none;
     padding: 10px 20px;
-    margin-top: 20px;
-    margin-left: 1000px;
+    margin-right: 10px;
+    
   }
   .join-btn
   {
@@ -120,6 +133,8 @@ body {
     cursor: pointer;
     border: none;
     padding: 10px 20px;
+  
+    
    
   }
   #menu-btn {
@@ -129,7 +144,7 @@ body {
     padding: 10px 20px;
     margin-top: 20px;
     cursor: pointer;
-    margin-right: 60px;
+    margin-right: 40px;
     
   }
   
@@ -247,6 +262,37 @@ body {
     margin-bottom: 2rem;
   }
   
+  /* css for the responsive menu */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  #menu-btn-checkbox:checked ~ .menu {
+    display: block;
+  }
+}
+
+/* Responsive Images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive Image for iPhone 12 Pro */
+@media (max-width: 480px) {
+  .watch img {
+    width: 100%;
+    height: auto;
+  }
+}
+
  
 
   .watch {
@@ -286,3 +332,35 @@ body {
     }
   }
   
+  /* Responsive Images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive Image for iPhone 12 Pro */
+@media (max-width: 480px) {
+  .watch img {
+    width: 100%;
+    height: auto;
+  }
+}
+/*icons css */
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.social-icons a {
+  color: #0a5c0f;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #f3fff5; /* Change this color to the desired hover color */
+}
